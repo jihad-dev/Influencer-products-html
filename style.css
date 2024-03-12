@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightskyblue;
+}
+
+.title h2 {
+  margin: 0px 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  font-style: normal;
+  color: #3a3a3a;
+}
+
+.nav-items {
+  margin-left: 40%;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.nav-items a {
+  margin-right: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*  */
+.content-wrapper {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-one {
+  padding-right: 20%;
+}
+
+.title-one h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.title-one p {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.title-two {
+  margin-top: 20px;
+  background-image: url(./images/Circle\ design.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-preebook {
+  padding: 14px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #e02c6d;
+  color: white;
+}
+
+.btn-preebook:active {
+  background-color: aqua;
+}
+
+.btn-preebook:hover {
+  background-color: darkcyan;
+}
+
+/*  */
+.company-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 45px;
+}
+
+.amazon img {
+  margin: 0px 50px;
+}
+
+/*  */
+.card-title h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+.cart-container {
+  display: grid;
+  gap: 55px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cart {
+  width: 350px;
+  box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
+    rgba(254, 205, 211, 0.1) 0px 8px 24px,
+    rgba(254, 205, 211, 0.1) 0px 16px 56px;
+  background-color: lightgrey;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  padding-top: 10px;
+  border: 2px solid gainsboro;
+}
+
+.cart img {
+  padding: 10px 23px;
+}
+
+.card-info {
+  padding: 10px 20px;
+}
+
+.card-info p {
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+}
+
+.btn-buy-now {
+  padding: 14px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #924bf9;
+  margin-top: 10px;
+}
+
+.btn-buy-now:hover {
+  background-color: lightskyblue;
+}
+
+.btn-buy-now a {
+  color: white;
+}
+
+/*  */
+.last-area {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  margin-bottom: 7%;
+  justify-content: center;
+  align-items: center;
+  gap: 18%;
+}
+
+.last-title-area h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.last-title-area p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* footer css start */
+footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  background-color: #23c4ed;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer css end */
+
+/* media quaries style */
+@media screen and (max-width: 576px) {
+  body {
+    background-color: green;
+  }
+
+  .title h2 {
+    margin-left: 120px;
+    font-size: 25px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .title-one {
+    margin-bottom: 15%;
+    margin-left: 80px;
+  }
+  .title-one .tt {
+    padding-top: 70%;
+  }
+  .title-one h1 {
+    margin-top: 80px;
+    font-size: 25px;
+  }
+  .title-two .camera-img {
+    width: 400px;
+    padding: 80px;
+    height: 410px;
+  }
+  /*  */
+  .company-logo {
+    margin-top: 50%;
+    margin-left: 25px;
+  }
+  .amazon img {
+    margin: 0px 5px;
+    margin-top: 20px;
+  }
+  .cart-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .last-area {
+    flex-direction: column;
+  }
+  .last-title img {
+    margin-top: 400px;
+  }
+  .last-title-area .hh {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  footer {
+    margin-top: 100%;
+  }
+}
+
+/* tablet design css  */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  body {
+    background-color: aqua;
+  }
+  .title h2 {
+    font-size: 22px;
+  }
+  .nav-items a {
+    margin-right: 12px;
+  }
+  .cart-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
